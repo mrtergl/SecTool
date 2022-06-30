@@ -56,9 +56,12 @@ There will be "history.csv" file for all the browser histories.
 |<img src="Images/2-a.png">|<img src="Images/2-b.png">|
 |---------|---------|
 | Terminal View | Code |
+
 <br>
+
 It takes a bit long because it searchs for the absolute path of the process to get the hash of it. After finding the hash, it scans in the Virustotal. You can find the scanned process in "vt_Results_exe.txt". After all the process scanned. It will be shown at an excel file called "vt_Results_exe.xlsx".
 <br>
+
 |<img src="Images/2-c.png">|<img src="Images/2-d.png">|
 |---------|---------|
 | Text File | Excel File |
