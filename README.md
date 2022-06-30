@@ -1,5 +1,5 @@
 # SecTool
-I developed Security Tool for Windows with python in order to analyise system more efficiently.I used VirusTotal API, Windows System Internals.
+I developed Security Tool for Windows with python in order to analyise system more efficiently. I used VirusTotal API, Windows System Internals.
 <br>
 |<img src="Images/AnaEkran.png">|
 |---------|
@@ -9,6 +9,7 @@ I developed Security Tool for Windows with python in order to analyise system mo
 ## To Run Project in Terminal
 - ### If you want to run the scipt in terminal, you have to look at <a href="https://github.com/mrtergl/VirusTotal_Python_URL_Scan">this link</a>.
 - ### Do not change the folder and file names in python script.
+- ### All files will be at C:/{user}/SecTool.
 
 <br>
 
@@ -30,15 +31,16 @@ I developed Security Tool for Windows with python in order to analyise system mo
 
 ## Scan Browser History with VirusTotal
 
-#### In this option you can scan all the browser history in device using Virus Total. This is the updated version of one of my repos <a href="https://www.geeksforgeeks.org/how-to-set-up-command-prompt-for-python-in-windows10/">URL_SCAN</a>.
+#### In this option you can scan all the browser history in device using Virus Total. This is the updated version of one of my repos <a href="https://github.com/mrtergl/VirusTotal_Python_URL_Scan">URL_SCAN</a>.
 
 |<img src="Images/1-a.png">|<img src="Images/1-b.png">|
 |---------|---------|
 | Terminal view | Code |
 
 <br>
-#### After scanning. You can see the results in C:/{username}/SecTool/vt_results.txt
-
+There will be "history.csv" file for all the browser histories.
+#### After scanning. You can see the results in C:/{username}/SecTool/vt_results.txt .
+<br>
 ## Scan Running Processes with their hash in VirusTotal
 ## Scan all the foreign IP addresses that communicating with device in VirusTotal
 ## Get Netstat Connection Table and Foreign IP addresses
