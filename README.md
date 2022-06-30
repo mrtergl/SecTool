@@ -8,7 +8,6 @@ I developed Security Tool for Windows with python in order to analyise system mo
 
 ## To Run Project in Terminal
 - ### The API Key for VirusTotal is mine. You can replace it with yours if you have advantaged profile in VirusTotal.
-- ### If you want to run the scipt in terminal, you have to look at <a href="https://github.com/mrtergl/VirusTotal_Python_URL_Scan">this link</a>.
 - ### Do not change the folder and file names in python script.
 - ### All files will be at C:/Users/{user}/SecTool.
 
