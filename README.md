@@ -78,7 +78,8 @@ It takes a bit long because it searchs for the absolute path of the process to g
 | Terminal view | Code |
 
 <br>
-If you say "y", it will scan all the IP adress and write down results to an excel file called "IP_RESULTS.xlsx". 
+
+#### If you say "y", it will scan all the IP adress and write down results to an excel file called "IP_RESULTS.xlsx". 
 
 <br>
 
@@ -95,7 +96,7 @@ If you say "y", it will scan all the IP adress and write down results to an exce
 | Terminal View | Code |
 
 <br>
-I used psutil to get services.
+#### I used psutil to get services.
 <br>
 
 |<img src="Images/4-b.png">|
