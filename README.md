@@ -1,5 +1,5 @@
 # SecTool
-I developed Security Tool for Windows with python in order to analyise system more efficiently. I used VirusTotal API, Windows System Internals.
+I developed Security Tool for Windows with python in order to analyise system more efficiently. I used VirusTotal API, Windows System Internals, WMI queries.
 <br>
 |<img src="Images/AnaEkran.png">|
 |---------|
