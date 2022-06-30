@@ -9,7 +9,7 @@ I developed Security Tool for Windows with python in order to analyise system mo
 ## To Run Project in Terminal
 - ### If you want to run the scipt in terminal, you have to look at <a href="https://github.com/mrtergl/VirusTotal_Python_URL_Scan">this link</a>.
 - ### Do not change the folder and file names in python script.
-- ### All files will be at C:/{user}/SecTool.
+- ### All files will be at C:/Users/{user}/SecTool.
 
 <br>
 
@@ -39,7 +39,7 @@ I developed Security Tool for Windows with python in order to analyise system mo
 
 <br>
 There will be "history.csv" file for all the browser histories.
-#### After scanning. You can see the results in C:/{username}/SecTool/vt_results.txt .
+#### After scanning. You can see the results in C:/Users/{username}/SecTool/vt_results.txt .
 <br>
 ## Scan Running Processes with their hash in VirusTotal
 ## Scan all the foreign IP addresses that communicating with device in VirusTotal
