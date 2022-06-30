@@ -41,8 +41,12 @@ I developed Security Tool for Windows with python in order to analyise system mo
 There will be "history.csv" file for all the browser histories.
 #### After scanning. You can see the results in C:/Users/{username}/SecTool/vt_results.txt .
 <br>
+
+
 ## Scan Running Processes with their hash in VirusTotal
+
 ## Scan all the foreign IP addresses that communicating with device in VirusTotal
+
 ## Get Netstat Connection Table and Foreign IP addresses
 ## Get all the Windows Services
 ## Get Startup Files
