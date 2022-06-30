@@ -76,9 +76,11 @@ It takes a bit long because it searchs for the absolute path of the process to g
 |<img src="Images/3-a.png">|<img src="Images/3-b.png">|
 |---------|---------|
 | Terminal view | Code |
+
 <br>
 If you say "y", it will scan all the IP adress and write down results to an excel file called "IP_RESULTS.xlsx". 
 <br>
+
 |<img src="Images/3-c.png">|<img src="Images/3-d.png">|
 |---------|---------|
 | Terminal View | Results |
@@ -90,9 +92,11 @@ If you say "y", it will scan all the IP adress and write down results to an exce
 |<img src="Images/4-a.png">|<img src="Images/4-c.png">|
 |---------|---------|
 | Terminal View | Code |
+
 <br>
 I used psutil to get services.
 <br>
+
 |<img src="Images/4-b.png">|
 |---------|
 | Results |
@@ -104,6 +108,7 @@ I used psutil to get services.
 |<img src="Images/5-a.png">|<img src="Images/5-b.png">|<img src="Images/5-c.png">|
 |---------|---------|---------|
 | Terminal View | Code | Results |
+
 <br>
 
 
