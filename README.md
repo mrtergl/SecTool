@@ -79,6 +79,7 @@ It takes a bit long because it searchs for the absolute path of the process to g
 
 <br>
 If you say "y", it will scan all the IP adress and write down results to an excel file called "IP_RESULTS.xlsx". 
+
 <br>
 
 |<img src="Images/3-c.png">|<img src="Images/3-d.png">|
