@@ -7,6 +7,7 @@ I developed Security Tool for Windows with python in order to analyise system mo
 <br>
 
 ## To Run Project in Terminal
+- ### The API Key for VirusTotal is mine. You can replace it with yours if you have advantaged profile in VirusTotal.
 - ### If you want to run the scipt in terminal, you have to look at <a href="https://github.com/mrtergl/VirusTotal_Python_URL_Scan">this link</a>.
 - ### Do not change the folder and file names in python script.
 - ### All files will be at C:/Users/{user}/SecTool.
@@ -41,10 +42,28 @@ I developed Security Tool for Windows with python in order to analyise system mo
 There will be "history.csv" file for all the browser histories.
 
 #### After scanning. You can see the results in C:/Users/{username}/SecTool/vt_results.txt .
+
+|<img src="Images/1-c.png">|
+|---------|
+| Results |
+
 <br>
 
-
 ## Scan Running Processes with their hash in VirusTotal
+
+#### In this option you can scan all the processes hash running in device using Virus Total. This is the updated version of one of my repos <a href="https://github.com/mrtergl/VirusTotal_Process_Scan">Process_Scan</a>.
+
+|<img src="Images/2-a.png">|<img src="Images/2-b.png">|
+|---------|---------|
+| Terminal view | Code |
+
+It takes a bit long because it searchs for the absolute path of the process to get the hash of it. After finding the hash, it scans in the Virustotal. You can find the scanned process in "vt_Results_exe.txt". After all the process scanned. It will be shown at an excel file called "vt_Results_exe.xlsx".
+
+|<img src="Images/2-c.png">|<img src="Images/2-d.png">|
+|---------|---------|
+| Text File | Excel File |
+
+#### Note: .txt file will be converted to .xlsx file after scanning.
 
 ## Scan all the foreign IP addresses that communicating with device in VirusTotal
 
