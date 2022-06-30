@@ -1,11 +1,21 @@
 # SecTool
 I developed Security Tool for Windows with python in order to analyise system more efficiently.I used VirusTotal API, Windows System Internals.
-
 <br>
-
 |<img src="Images/AnaEkran.png">|
 |---------|
 | Main Menu |
+<br>
+
+## Necessary Libraries:
+
+| Library  | Code to install |
+| ------------- | ------------- |
+| hashlib  | ``` pip install hashlib ```  |
+| pathlib2  | ``` pip install pathlib2 ```  |
+| WMI  |``` pip install WMI ``` |
+| requests | ``` pip install requests ```|
+| pandas | ``` pip install pandas ```|
+
 
 ## To Run Project in Terminal
 - ### If you want to run the scipt in terminal, you have to look at <a href="https://www.geeksforgeeks.org/how-to-set-up-command-prompt-for-python-in-windows10/">this link</a>.
