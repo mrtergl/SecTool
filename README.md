@@ -7,7 +7,7 @@ I developed Security Tool for Windows with python in order to analyise system mo
 <br>
 
 ## To Run Project in Terminal
-- ### If you want to run the scipt in terminal, you have to look at <a href="https://www.geeksforgeeks.org/how-to-set-up-command-prompt-for-python-in-windows10/">this link</a>.
+- ### If you want to run the scipt in terminal, you have to look at <a href="https://github.com/mrtergl/VirusTotal_Python_URL_Scan">this link</a>.
 - ### Do not change the folder and file names in python script.
 
 <br>
