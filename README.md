@@ -39,6 +39,7 @@ I developed Security Tool for Windows with python in order to analyise system mo
 
 <br>
 There will be "history.csv" file for all the browser histories.
+
 #### After scanning. You can see the results in C:/Users/{username}/SecTool/vt_results.txt .
 <br>
 
