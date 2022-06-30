@@ -67,6 +67,7 @@ It takes a bit long because it searchs for the absolute path of the process to g
 | Text File | Excel File |
 
 #### Note: .txt file will be converted to .xlsx file after scanning.
+
 <br>
 
 ## Scan all the foreign IP addresses that communicating with device in VirusTotal
@@ -96,7 +97,9 @@ It takes a bit long because it searchs for the absolute path of the process to g
 | Terminal View | Code |
 
 <br>
+
 #### I used psutil to get services.
+
 <br>
 
 |<img src="Images/4-b.png">|
