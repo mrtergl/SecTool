@@ -1,7 +1,7 @@
 # SecTool
 I developed Security Tool for Windows with python in order to analyise system more efficiently. I used VirusTotal API, Windows System Internals, WMI queries.
 <br>
-|<img src="Images/AnaEkran.png">|
+|<img src="Images/AnaEkran0.png">|
 |---------|
 | Main Menu |
 <br>
