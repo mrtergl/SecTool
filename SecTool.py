@@ -32,7 +32,7 @@ home = home+"\SecTool"
 
 headers = {
         "Accept": "application/json",
-        "x-apikey": "0f901f14014fb58f6ea58e0ea143366e519c015182329999c89eda8066eb855c" # YOUR OWN API KEY !!!
+        "x-apikey": "# YOUR OWN API KEY !!!" 
     }
 
 x = True
