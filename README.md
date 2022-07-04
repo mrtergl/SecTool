@@ -140,7 +140,7 @@ It takes a bit long because it searchs for the absolute path of the process to g
 #### This part may take few minutes. Virus Total making a query with an id which is coming from uploaded file. It'll be added a queue, that's why getting analyse report process may take a while.
 
 |<img src="Images/6-e.png">|
-|---------|---------|
+|---------|
 | Results |
 
 <br>
