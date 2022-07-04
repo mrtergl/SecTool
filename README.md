@@ -29,7 +29,7 @@ I developed Security Tool for Windows with python in order to analyise system mo
 | openpyxl 3.0.10 | ``` pip install openpyxl ```|
 <br>
 
-## Scan Browser History with VirusTotal
+## 1- Scan Browser History with VirusTotal
 
 #### In this option you can scan all the browser history in device using Virus Total. This is the updated version of one of my repos <a href="https://github.com/mrtergl/VirusTotal_Python_URL_Scan">URL_SCAN</a>.
 
@@ -48,7 +48,7 @@ There will be "history.csv" file for all the browser histories.
 
 <br>
 
-## Scan Running Processes with their hash in VirusTotal
+## 2- Scan Running Processes with their hash in VirusTotal
 
 #### In this option you can scan all the processes hash running in device using Virus Total. This is the updated version of one of my repos <a href="https://github.com/mrtergl/VirusTotal_Process_Scan">Process_Scan</a>.
 
@@ -69,7 +69,7 @@ It takes a bit long because it searchs for the absolute path of the process to g
 
 <br>
 
-## Scan all the foreign IP addresses that communicating with device in VirusTotal
+## 3- Scan all the foreign IP addresses that communicating with device in VirusTotal
 
 #### In this option you can see all the connections from your device to the Internet. It will show you the output of "netstat -ano" command as .txt file and will ask for the scan of foreign address in VirusTotal.
 
@@ -87,7 +87,7 @@ It takes a bit long because it searchs for the absolute path of the process to g
 |---------|---------|
 | Terminal View | Results |
 
-## Get all the Windows Services
+## 4- Get all the Windows Services
 
 #### In this option you can get all the Windows Services. It will get all services and writes down an excel file.
 
@@ -105,7 +105,7 @@ It takes a bit long because it searchs for the absolute path of the process to g
 |---------|
 | Results |
 
-## Get Startup Files
+## 5- Get Startup Files
 
 #### In this option you can see all the Startup Programs which started when user logged in. I used WMI Query to get them.
 
@@ -115,7 +115,24 @@ It takes a bit long because it searchs for the absolute path of the process to g
 
 <br>
 
+## 6- Upload Files to VirusTotal and Get Analyse Report
 
+#### In this option you can upload suspicious files to VirusTotal. You will get a report of analyzed file.
 
+ Upload File
+ 
+|<img src="Images/6-a.png">|<img src="Images/6-b.png">|
+|---------|---------|
+| Terminal View | Code |
+
+<br>
+Getting Analyse Report
+<br>
+ 
+|<img src="Images/6-c.png">|<img src="Images/6-b.png">|
+|---------|---------|
+| Terminal View | Code |
+
+This part may take few minutes. Virus Total making a query with an id which is coming from uploaded file. It'll be added a queue, that's why getting analyse report process may take a while.
 
 
