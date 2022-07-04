@@ -119,22 +119,22 @@ It takes a bit long because it searchs for the absolute path of the process to g
 
 #### In this option you can upload suspicious files to VirusTotal. You will get a report of analyzed file.
 
- Upload File
+#### Upload File
  <br>
 |<img src="Images/6-a.png">|<img src="Images/6-b.png">|
 |---------|---------|
 | Terminal View | Code |
 
 <br>
-Getting Analyse Report
+#### Getting Analyse Report
 
 <br>
  
-|<img src="Images/6-c.png">|<img src="Images/6-b.png">|
+|<img src="Images/6-c.png">|<img src="Images/6-d.png">|
 |---------|---------|
-| Terminal View | Code |
+| Terminal Views |
 
-This part may take few minutes. Virus Total making a query with an id which is coming from uploaded file. It'll be added a queue, that's why getting analyse report process may take a while.
+#### This part may take few minutes. Virus Total making a query with an id which is coming from uploaded file. It'll be added a queue, that's why getting analyse report process may take a while.
 
 |<img src="Images/6-e.png">|
 |---------|---------|
