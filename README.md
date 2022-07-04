@@ -109,6 +109,8 @@ It takes a bit long because it searchs for the absolute path of the process to g
 
 #### In this option you can see all the Startup Programs which started when user logged in. I used WMI Query to get them.
 
+<br>
+
 |<img src="Images/5-a.png">|<img src="Images/5-b.png">|<img src="Images/5-c.png">|
 |---------|---------|---------|
 | Terminal View | Code | Results |
