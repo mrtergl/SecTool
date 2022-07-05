@@ -2,6 +2,7 @@ from ast import Try
 from genericpath import exists
 import hashlib
 from browser_history import get_history
+from matplotlib.font_manager import json_dump
 import requests
 import json
 import base64
@@ -32,10 +33,16 @@ home = home+"\SecTool"
 
 headers = {
         "Accept": "application/json",
-        "x-apikey": "# YOUR OWN API KEY !!!" 
+        "x-apikey": "0f901f14014fb58f6ea58e0ea143366e519c015182329999c89eda8066eb855c" # YOUR OWN API KEY !!!
     }
 
 x = True
+
+def find(name):
+        for root, dirs, files in os.walk("C:\\"):
+            if name in files:
+                return os.path.join(root, name)
+
 
 def TxtToExcel(file):
 
@@ -51,7 +58,6 @@ def TxtToExcel(file):
     ws.Columns.AutoFit()
     wb.Save()
     excel.Application.Quit()
-
 
 
 def IP_STATS():
@@ -123,7 +129,6 @@ def IP_STATS():
         menu()
 
 
-
 def Browser_History():
 
     print("\n")
@@ -175,7 +180,6 @@ def Browser_History():
     print("SCANNING COMPLETED")
 
 
-
 def HASH_SCAN():
 
     print("\n")
@@ -189,10 +193,7 @@ def HASH_SCAN():
     BUF_SIZE = 32768
     md5 = hashlib.md5()
     sha1 = hashlib.sha1()
-    def find(name):
-        for root, dirs, files in os.walk("C:\\"):
-            if name in files:
-                return os.path.join(root, name)
+    
 
     
     with open(home+"/vt_Result_exe.txt",'a') as vt:
@@ -236,7 +237,6 @@ def HASH_SCAN():
     TxtToExcel("/vt_Result_exe")
         
     print("SCANNING COMPLETED")
-
 
 
 def win32_service():
@@ -288,6 +288,66 @@ def Startups():
         menu()
 
     
+def UploadFile():
+    
+    def upload(file):
+        print(Fore.LIGHTYELLOW_EX+"Searching the file..."+Style.RESET_ALL)
+        url = "https://www.virustotal.com/api/v3/files"
+        try:
+            files = {"file": open(find(file), "rb")}
+            print(Style.BRIGHT+Fore.LIGHTYELLOW_EX+"\nFile Found !"+Style.RESET_ALL)
+            response = requests.post(url, files=files, headers=headers)
+            id = json.loads(response.content)["data"]["id"]
+            print(Style.BRIGHT+Fore.LIGHTYELLOW_EX+"\nFile Uploaded !\n"+Style.RESET_ALL)
+            return id
+        except TypeError:
+            print(Style.BRIGHT  + Fore.LIGHTRED_EX +"File name is wrong or file is missing !"+Style.RESET_ALL)
+            return menu()
+        
+
+    def get_upload_analysis(file):
+        url = "https://www.virustotal.com/api/v3/analyses/"+upload(file)
+        filename = home+"/"+file+"_analysis.txt"
+        response = requests.get(url, headers=headers)
+        x= json.loads(response.content)
+        with open(filename,'a') as vt:
+            vt.write ('Name,Harmless,Type Unsupported,Suspicious,Confirmed Timeout,Timeout,Failure,Malicious,Undetected\n\n')
+
+        print("Fetching the data.. Please Wait. This may take a couple of minutes.")
+
+        while(x["data"]["attributes"]["status"] !="completed"):
+            time.sleep(10)
+            response = requests.get(url, headers=headers)
+            x= json.loads(response.content)
+            print("Loading...")
+        if len(x["data"])!= 0:
+            data =  x["data"]["attributes"]["stats"]
+            with open(filename,'a') as vt:
+                vt.write("{}".format(file))
+                for value in data.values():
+                    vt.write(',{}'.format(value))
+                vt.write("\n")
+            print(Style.BRIGHT+Fore.LIGHTYELLOW_EX+"\nDONE !"+Style.RESET_ALL)
+            return filename
+        else:
+            with open(filename,'a') as vt:
+                vt.write("{},Built-in-Service".format(file))
+                vt.write("\n")
+            print(Style.BRIGHT+Fore.LIGHTYELLOW_EX+"\nDONE !"+Style.RESET_ALL)
+    
+    file = input(Style.BRIGHT  + Fore.GREEN +"\nPlease write the name of the file with its extension that you want to upload: "+Fore.LIGHTYELLOW_EX)
+    print(Style.RESET_ALL)
+    get_upload_analysis(str(file))
+    filename ="/"+file+"_analysis"
+    TxtToExcel(filename)
+
+    ans = input(Style.BRIGHT  + Fore.GREEN +"\nDo you want to open the file report ?[y/n]: "+Style.RESET_ALL)
+
+    if ans == "y":
+            os.system("start "+home+filename+".xlsx")
+            menu()
+    else:
+        menu()
 
 
 def number_to_string(argument):
@@ -304,6 +364,9 @@ def number_to_string(argument):
             return win32_service()
         case 5:
             return Startups()
+        case 6:
+            return UploadFile()
+        
 
 
 
@@ -316,6 +379,7 @@ def menu():
         print (Style.BRIGHT+Fore.YELLOW+'3'+Style.RESET_ALL+' -- Get Netstat Connection Table and Foreign IP addresses'+Style.RESET_ALL )
         print (Style.BRIGHT+Fore.YELLOW+'4'+Style.RESET_ALL+' -- Get all the Windows Services'+Style.RESET_ALL )
         print (Style.BRIGHT+Fore.YELLOW+'5'+Style.RESET_ALL+' -- Get Startup Files'+Style.RESET_ALL )
+        print (Style.BRIGHT+Fore.YELLOW+'6'+Style.RESET_ALL+' -- VirusTotal File Upload and Analyse'+Style.RESET_ALL )
         print (Style.BRIGHT+Fore.YELLOW+'0'+Style.RESET_ALL+' -- Exit\n' )
         option = int(input(Style.BRIGHT+Fore.LIGHTGREEN_EX+'Enter Your Choice: '+Style.RESET_ALL))
         number_to_string(option)
